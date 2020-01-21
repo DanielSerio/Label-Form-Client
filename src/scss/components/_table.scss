@@ -1,0 +1,14 @@
+@import '../config/manifest';
+
+.table {
+  tr {
+   .switch{ max-width: 120px; }
+  }
+}
+
+.subtle {
+  color: $quat;
+  text-shadow: 0 0 2px $quin;
+  text-align: center;
+  line-height: 2;
+}

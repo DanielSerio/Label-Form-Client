@@ -1,0 +1,26 @@
+@import '../config/manifest';
+
+.control {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.add-input {
+  border: 0.1rem solid lighten($secondary, 33%);
+  display: flex;
+  align-items: center;
+  border-radius: 0.4rem;
+
+  &.focused {
+    border-color: $primary;
+  }
+
+  .icon {
+    margin-top: 0.75rem;
+  }
+
+  .input {
+    margin: 0;
+    border: none;
+  }
+}

@@ -1,0 +1,44 @@
+@import '../config/manifest';
+
+$error: #ff2634;
+
+.switch {
+  display: flex;
+  cursor: pointer;
+  font-size: 1rem;
+  
+  .prod,
+  .dev { 
+    flex: 1; 
+    padding: 1rem;
+    border: 1px solid;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .prod {
+    border-radius: 0.4rem 0 0 0.4rem;
+  }
+
+  .dev { 
+    background: $error; 
+    color: white;
+    border-color: $error;
+    border-radius: 0 0.4rem 0.4rem 0;
+    border-left: none;
+  }
+}
+
+.switch.production {
+  .prod {
+    background: $primary;
+    border-color: $primary;
+    color: white;
+  }
+
+  .dev {
+    background: transparent;
+    color: $secondary;
+    border-color: $secondary;
+  }
+}

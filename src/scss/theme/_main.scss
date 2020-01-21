@@ -1,0 +1,10 @@
+@import '../config/manifest';
+
+.app {
+  .header {
+    background: $tet;
+    border-bottom: 0.1rem solid $quin;
+  }
+
+  a { color: $primary; }
+}
